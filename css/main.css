@@ -1,0 +1,812 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+html {
+  scroll-behavior: smooth;
+}
+
+  body {
+    font-family: calibri, sans-serif;
+  }
+header{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+    height: 110vh;
+    padding-top: 5px;
+}
+
+/*Creative scrool style*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #8421db;
+}
+
+/*Navbar style*/
+.nav {
+    height: 70px;
+    width: 70%;
+    background-color: white;
+    position: relative;
+    margin: 30px auto;
+    border-radius: 45px;
+  }
+.nav .logo{
+    display: inline-block;
+    font-size: 22px;
+    color: black;
+    font-weight: 300;
+    font-family: sans-serif;
+    padding: 23px;
+    text-decoration: none;
+    transition: 0.17s all linear;
+  }
+.nav .logo:hover{
+    color: #fc65cf;
+}
+
+.nav .nav-btn {
+    display: none;
+  }
+
+.nav .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+.nav .nav-links ul li a{
+    display: block;
+    padding: 0 8px;
+    color: black;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: 0.17s all linear;
+  }
+.nav .nav-links ul li:nth-child(1) a{
+    color:  #fc65cf;
+}
+.home_link{
+    color: #fc65cf;
+}
+.nav .nav-links ul{
+    padding: 10px 20px;
+    margin-top: 5px;
+    list-style: none;
+    position: relative;
+    float: none;
+
+  }
+.nav .nav-links ul li{
+    display: inline-block;
+  }
+.nav .nav-links  ul li a:hover{
+    color: #fc65cf;
+  }
+
+.nav #nav-check {
+    display: none;
+  }
+
+/*Home page style*/
+
+header .welcome{
+    width: 37%;
+    height: 11%px;
+    margin: 180px auto;
+    text-align: center;
+}
+header .welcome .textOne{
+    color: white;
+    font-size: 37px;
+}
+header .welcome .more{
+    color: white;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 15px;
+}
+header .welcome .btn{
+    width: 110px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: #fc65cf;
+    color: white;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: 0.17s all linear;
+    margin-top: 20px;
+}
+header .welcome .btn:hover{
+    background-color: #7960d1;
+}
+
+/*about section*/
+
+#about .cards{
+    width: 80%;
+    height:300px;
+    margin: -150px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about .cards .card{
+    width: 300px;
+    height: 230px;
+    margin: 25px;
+    padding: 20px;
+    text-align: center;
+    background-color:white;
+    border-radius: 25px;
+    -webkit-box-shadow: 2px 2px 21px 9px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 2px 2px 21px 9px rgba(34, 60, 80, 0.2);
+    box-shadow: 2px 2px 21px 9px rgba(34, 60, 80, 0.2);
+    cursor: pointer;
+}
+#about .cards .card .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url(../img/featured-item-01.png);
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #7960d1;
+    margin: 5px auto;
+    transition: 0.15s all linear;
+}
+#about .cards .card  .create{
+    font-size: 19px;
+    font-weight: 510;
+    margin-top: 23px;
+}
+#about .cards .card .cardText{
+    color: gray;
+    margin-top: 9px;
+}
+#about .cards .card:hover .circle{
+    background-color: #fc65cf;
+}
+#about .createProjecte{
+    width: 70%;
+    height: 400px;
+    margin: 80px auto 0px auto;
+    border-bottom: 1px solid gainsboro;
+}
+#about .createProjecte .imageLeft{
+    display: inline;
+    float: left;
+}
+#about .createProjecte .textProject{
+    width: 460px;
+    display: inline;
+    height: 300px;
+    float: right;
+    margin-top: 70px;
+}
+#about .createProjecte .textProject .creatName{
+    font-size: 25px;
+    font-weight: 400;
+}
+#about .createProjecte .textProject .paragraphCreate{
+    color: gray;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 38px;
+}
+
+#about .help{
+    width: 70%;
+    height: 400px;
+    margin: 100px auto 0px auto;
+}
+#about .help .helpProject{
+    width: 460px;
+    display: inline;
+    height: 300px;
+    float: left;
+    margin-top: 70px;
+}
+#about .help .helpProject .helpName{
+    font-size: 25px;
+    font-weight: 400;
+}
+#about .help .helpProject .paragraphHelp{
+    color: gray;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 38px;
+}
+#about .help .rightImage{
+    display: inline;
+    float: right;
+}
+
+
+/*ToDoAPP section*/
+
+#ToDoApp{
+    background-color: #8421db;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-height: 60vh;
+    padding-bottom: 13%;
+}
+#ToDoApp .toDoText{
+    text-align: center;
+    margin: 15% auto 1% auto;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+#ToDoApp .forms{
+    min-height: 20vh;
+    display: flex;
+    width: 70%;
+    margin: 15px  auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#ToDoApp .forms input, button{
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+#ToDoApp .forms input{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ToDoApp .input-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ToDoApp .forms .btn{
+    color: #fc65cf;
+    background-color: white;
+    cursor:pointer;
+    transition: all 0.3s ease;
+}
+#ToDoApp .forms .btn:hover{
+    background-color: #fc65cf;
+    color:white;  
+}
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color: #fc65cf;
+    width: 160px;
+    cursor: pointer;
+    padding: 16px;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    background-color: #fc65cf;
+    top: 0;
+    right: 0;
+    padding: 16px;
+    pointer-events: none;
+}
+
+
+/*footer style*/
+
+footer{
+    background: linear-gradient(#ad65f0, #7960d1);
+    padding-bottom: 5px;
+    padding-top: 5px;
+    
+}
+footer .platforms{
+    width: 80%;
+    height: 100px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid darkgray;
+}
+footer .platforms .messenger{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin: 15px;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: center;
+    transition: 0.15s all linear;
+    cursor: pointer;
+}
+footer .platforms .messenger:hover{
+    background-color: #fc65cf;
+}
+footer .platforms .telegram{
+    background-image: url(../img/telegram-plane-brands.svg);
+}
+footer .platforms .tiktok{
+    background-image: url(../img/tiktok-brands.svg);
+}
+footer .platforms .facebook{
+    background-image: url(../img/facebook-f-brands.svg);
+    background-size: 18px;
+}
+footer .platforms .instagram{
+    background-image: url(../img/instagram-brands.svg);
+}
+footer .platforms .youtube{
+    background-image: url(../img/Youtube.svg);
+}
+footer .brand {
+    text-align: center;
+    color: white;
+    margin: 30px auto;
+}
+
+/*Respansive navbar*/
+
+  @media (max-width:750px){
+    .nav{
+    border-radius: 24px;     
+    }
+    .nav .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      padding: 10px 15px;
+    }
+    .nav .nav-btn label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav .nav-btn label:checked ~ .nav-btn label {
+      
+    }
+    .nav .nav-btn label span{
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid black;
+    }
+      .nav .nav-btn label span:nth-child(2){
+        width: 33px;
+      }
+    .nav .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: white;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav .nav-links  ul li a {
+      display: block;
+      width: 100%;
+    }
+      .nav .nav-links ul li{
+        display: block;
+        padding: 0;
+        background-color: white;
+        padding-right: 50px;
+      }
+      .nav .nav-links ul li a{
+          margin-left: 40%;
+      }
+    /* checked span  */
+      header .nav #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+      }
+      .nav #nav-check:checked ~ .nav-links {
+      height: calc(236px - 50px);
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom-left-radius: 35px;
+      border-bottom-right-radius: 35px;
+      }
+      .nav .nav-btn label:hover{
+          cursor: pointer;
+      }
+}
+
+/*Respansive web site all*/
+
+@media (min-width: 0px) and (max-width:475.9px){
+    .nav .logo{
+        font-size: 16px;
+    }
+   header .welcome{
+    width: 80%;
+    height: 11%px;
+    margin: 100px auto;
+}
+/*About responsive*/
+    #about .cards{
+    margin: 55% auto 0px auto;
+    flex-direction: column;
+}
+    #about .cards .card{
+    width: 90%;
+    height: 90%;
+    }
+    #about .createProjecte{
+    margin: 275px auto 0px auto;
+    display: flex;
+    height: 598px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: none;
+}
+    #about .createProjecte .textProject{
+    width: 100%;
+    display: inline;
+    margin-top: 30px;
+}
+    #about .createProjecte .imageLeft img{
+        width: 90%;
+        height: 90%;
+    }
+    #about .help{
+    width: 90%;
+    margin: -37% auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+    #about .help .rightImage{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #about .help .rightImage img{
+        width: 85%;
+        height: 85%;
+    }
+    #about .createProjecte .textProject .creatName{
+    font-size: 22px;
+    font-weight: 400;
+}
+    #about .createProjecte .textProject .paragraphCreate{
+    color: gray;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+    #about .help .helpProject{
+    width: 80%;
+    display: inline;
+    height: 300px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+    #about .help .helpProject .helpName{
+    font-size: 20px;
+}
+    #about .help .helpProject .paragraphHelp{
+    color: gray;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+   /*ToDOAPP responsive*/
+    #ToDoApp{
+        margin-top: 13%;
+    }
+    #ToDoApp .toDoText{
+    margin: 31% auto 1% auto;
+    font-size: 20px;
+}
+    #ToDoApp .forms{
+    flex-direction: column;
+    margin: 15px auto;
+    }
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 11px;
+    }
+    #ToDoApp .forms input, button{
+    padding: 0.3rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: white;
+}
+    footer .platforms .messenger{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 10px;
+    background-size: 16px;
+}
+    footer p{
+        font-size: 13px;
+    }
+
+}
+
+/**/
+@media (min-width: 476px) and (max-width: 765px){
+    header .welcome{
+    width: 80%;
+    height: 11%px;
+    margin: 130px auto;
+}
+/*About responsive*/
+    #about .cards{
+    margin: 150px auto 0px auto;
+    flex-direction: column;
+}
+    #about .createProjecte{
+    margin: 280px auto 0px auto;
+    display: flex;
+    height: 598px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-bottom: none;
+}
+    #about .createProjecte .textProject{
+    width: 100%;
+    display: inline;
+    margin-top: 30px;
+} 
+    #about .help{
+    width: 90%;
+    height: 400px;
+    margin: 30px auto 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+    #about .help .rightImage{
+        margin-top: -100px;
+    }
+    #about .help .rightImage img{
+        width: 95%;
+        height: 95%;
+    }
+    #about .createProjecte .textProject .creatName{
+    font-size: 22px;
+    font-weight: 400;
+}
+    #about .createProjecte .textProject .paragraphCreate{
+    color: gray;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+    #about .help .helpProject{
+    width: 80%;
+    display: inline;
+    height: 300px;
+    margin-top: 30px;
+}
+    #about .help .helpProject .helpName{
+    font-size: 20px;
+}
+    #about .help .helpProject .paragraphHelp{
+    color: gray;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 11px;
+    }
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 14px;
+    }
+    #ToDoApp .forms input, button{
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    border: none;
+    background-color: white;
+}
+}
+
+/**/
+@media (min-width: 766px) and (max-width:989px){
+        header .welcome{
+    width: 80%;
+    height: 11%px;
+    margin: 130px auto;
+}
+/*About responsive*/
+    #about .cards{
+    margin: -19% auto 0px auto;
+    width: 90%;
+}
+    #about .cards .card{
+        width: 90%;
+        height: 90%;
+    }
+    #about .createProjecte{
+    margin: 8% auto 0px auto;
+    display: flex;
+    height: 60%;
+    border-bottom: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+    #about .createProjecte .textProject{
+    width: 40%;
+    display: inline;
+    margin-top: 30px;
+} 
+    #about .help{
+    margin: 8% auto 0px auto;
+    display: flex;
+    height: 60%;
+    border-bottom: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 3%;
+}
+    #about .help .rightImage img{
+        width: 95%;
+        height: 95%;
+    }
+    #about .createProjecte .textProject .creatName{
+    font-size: 27px;
+    font-weight: 400;
+}
+    #about .createProjecte .textProject .paragraphCreate{
+    color: gray;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+    #about .help .helpProject{
+    width: 40%;
+    display: inline;
+    margin-top: 30px;
+}
+    #about .help .helpProject .helpName{
+    font-size: 27px;
+}
+    #about .help .helpProject .paragraphHelp{
+    color: gray;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 11px;
+    }
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 14px;
+    }
+    #ToDoApp .forms input, button{
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    border: none;
+    background-color: white;
+}
+}
+
+/**/
+@media (min-width: 990px) and (max-width: 1200px){
+    header .welcome{
+    width: 80%;
+    height: 11%px;
+    margin: 130px auto;
+}
+About responsive
+    #about .cards{
+    margin: -20% auto 0px auto;
+    width: 90%;
+}
+    #about .cards .card{
+        width: 90%;
+        height: 90%;
+    }
+    #about .createProjecte{
+    margin: 8% auto 0px auto;
+    display: flex;
+    height: 60%;
+    border-bottom: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+}
+    #about .createProjecte .textProject{
+    width: 35%;
+    display: inline;
+    margin-top: 30px;
+} 
+    #about .help{
+    margin: 8% auto 0px auto;
+    display: flex;
+    height: 60%;
+    border-bottom: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    padding-bottom: 3%;
+}
+    #about .help .rightImage img{
+        width: 95%;
+        height: 95%;
+    }
+    #about .createProjecte .textProject .creatName{
+    font-size: 27px;
+    font-weight: 400;
+}
+    #about .createProjecte .textProject .paragraphCreate{
+    color: gray;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+}
+    #about .help .helpProject{
+    width: 40%;
+    display: inline;
+    margin-top: 30px;
+}
+    #about .help .helpProject .helpName{
+    font-size: 27px;
+}
+    #about .help .helpProject .paragraphHelp{
+    color: gray;
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 15px;
+}
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 11px;
+    }
+    #ToDoApp .forms input{
+        width: 80%;
+        font-size: 14px;
+    }
+    #ToDoApp .forms input, button{
+    padding: 0.5rem;
+    font-size: 1.9rem;
+    border: none;
+    background-color: white;
+}
+}
+
+/*The end :)*/
+
